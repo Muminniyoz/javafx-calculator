@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<MenuBar style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.Menu">
+    <menus>
+        <Menu mnemonicParsing="false" text="Вид">
+            <items>
+                <RadioMenuItem mnemonicParsing="false" text="Обычный" selected="true" >
+                    <toggleGroup>
+                        <ToggleGroup fx:id="AsosRejim" />
+                    </toggleGroup>
+                    <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="DIGIT1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" text="Инженерный" toggleGroup="$AsosRejim">
+                    <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="DIGIT2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" text="Программист" toggleGroup="$AsosRejim">
+                    <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="DIGIT3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" text="Статистика" toggleGroup="$AsosRejim">
+                    <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="DIGIT4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+                <SeparatorMenuItem mnemonicParsing="false" />
+                <RadioMenuItem mnemonicParsing="false" text="Журнал">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" text="Группировка цифр по разрядам" />
+                <SeparatorMenuItem mnemonicParsing="false" />
+                <RadioMenuItem mnemonicParsing="false" text="Обычный" selected="true" >
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="F4" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" text="Преобразование единиц">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="U" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" text="Вычисление даты">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </RadioMenuItem>
+            
+                <Menu mnemonicParsing="false" text="Листы">
+                    <items>
+                        <RadioMenuItem mnemonicParsing="false" text="Ипотека"/>
+                        <RadioMenuItem mnemonicParsing="false" text="Автолизинг" />
+                        <RadioMenuItem mnemonicParsing="false" text="Экономия(миль/галлон)" />
+                        <RadioMenuItem mnemonicParsing="false" text="Экономия топлива " />
+                    </items>
+                </Menu>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Правка">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Копировать" >
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                    
+                </MenuItem>
+                <MenuItem mnemonicParsing="false" text="Вставить" >
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+              
+                
+                <Menu mnemonicParsing="false" text="Журналь">
+                    <items>
+                        <RadioMenuItem mnemonicParsing="false" text="Копироваты журналь" disable="true" />
+                        <RadioMenuItem mnemonicParsing="false" text="Измениты" disable="true" >
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="F2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" text="Отменить правку" disable="true" >
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="ESCAPE" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" text="Очистить"  disable="true" >
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                            </accelerator>
+                        </RadioMenuItem>
+                    </items>
+                </Menu>
+            </items>
+        </Menu>
+        
+        
+        <Menu mnemonicParsing="false" text="Справка">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Просмотреть справку">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="F1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+                <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem mnemonicParsing="false" text="О программие" />
+            </items>
+        </Menu>
+    </menus>
+    <padding>
+        <Insets bottom="1.0" right="1.0" top="1.0" />
+    </padding>
+</MenuBar>

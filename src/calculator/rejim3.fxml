@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLController">
+   <children>
+      <VBox prefHeight="40.0" prefWidth="365.0" style="-fx-border-color: black; -fx-background-color: #e9f2f8;">
+         <VBox.margin>
+            <Insets bottom="3.0" left="8.0" right="8.0" top="8.0" />
+         </VBox.margin>
+         <children>
+            <Label fx:id="izoh" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="402.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="31.0" prefWidth="363.0">
+               <children>
+                  <Label fx:id="hotiraHolat" contentDisplay="BOTTOM" minHeight="20.0" minWidth="15.0" prefHeight="28.0" prefWidth="15.0" textAlignment="CENTER">
+                     <padding>
+                        <Insets left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="holat" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="26.0" prefWidth="380.0" text="0">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <GridPane alignment="CENTER" style="-fx-border-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="15.0" valignment="CENTER" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="15.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets bottom="3.0" left="8.0" right="8.0" top="8.0" />
+         </VBox.margin>
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+                  <Label alignment="CENTER_RIGHT" text="0" textFill="#2b1597" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <Label text="0" textFill="#b1bcbf" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="32" textFill="#b1bcbf" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="47" textFill="#b1bcbf" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="15" textFill="#b1bcbf" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="63" textFill="#b1bcbf" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="31" textFill="#b1bcbf" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <HBox>
+         <children>
+            <GridPane alignment="CENTER" hgap="5.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnMc1" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#mhotiraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" textFill="#2b1597" GridPane.columnIndex="2">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnQavsYopish" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text=")" textFill="#2b1597" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnXor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="Xor" textFill="#2b1597" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnOr" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="Or" textFill="#2b1597" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnLsh" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="Lsh" textFill="#2b1597" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnD" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="D" textFill="#2b1597" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRoR" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="RoR" textFill="#2b1597" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnRoL" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="RoL" textFill="#2b1597" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnNot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="Not" textFill="#2b1597" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnC" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="C" textFill="#2b1597" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnB" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="B" textFill="#2b1597" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnQavsOchish" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#mhotiraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="(" textFill="#2b1597" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnRsh" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="Rsh" textFill="#2b1597" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMod" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="Mod" textFill="#2b1597" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnAnd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="And" textFill="#2b1597" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnE" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="E" textFill="#2b1597" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnF" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="F" textFill="#2b1597" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnA" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="A" textFill="#2b1597" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <VBox alignment="CENTER_LEFT" style="-fx-border-color: black;" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowSpan="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+                     <children>
+                        <RadioButton mnemonicParsing="false" text="Hex" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" selected="true" text="Dec" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Oct" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Bin" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" style="-fx-border-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="3">
+                     <children>
+                        <RadioButton mnemonicParsing="false" selected="true" text="8 байт" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="4 байт" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="2 байт" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="1 байт" textFill="#2b1597">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </GridPane>
+            <GridPane hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="200.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnBesht" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="5" textAlignment="CENTER" textFill="#2b1597" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnBoluv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#amalHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="/" textFill="#2b1597" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnToqqiz" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="9" textAlignment="CENTER" textFill="#2b1597" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnSakkiz" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="8" textAlignment="CENTER" textFill="#2b1597" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnYetti" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="7" textAlignment="CENTER" textFill="#2b1597" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnIldiz" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ildizHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="_/" textFill="#2b1597" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnPlusMenus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ishoraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="+_" textFill="#2b1597" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnC" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ctozlashHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="C" textFill="#2b1597" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnUchirgich" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#uchirishHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" textFill="#2b1597" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnCe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ctozlashHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="CE" textFill="#2b1597" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMmenus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#mhotiraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="M-" textFill="#2b1597" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMplus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#mhotiraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="M+" textFill="#2b1597" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMs" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#mhotiraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="MS" textFill="#2b1597" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMr" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#mhotiraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="MR" textFill="#2b1597" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnAyiruv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#amalHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="-" textFill="#2b1597" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnFoiz" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#foizHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="\%" textFill="#2b1597" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnUch" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="3" textAlignment="CENTER" textFill="#2b1597" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnIkki" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="2" textAlignment="CENTER" textFill="#2b1597" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnBir" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="1" textAlignment="CENTER" textFill="#2b1597" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnTeskari" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#teskariHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="1/x" textFill="#2b1597" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnKupaytiruv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#amalHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="*" textFill="#2b1597" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnOlti" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="6" textFill="#2b1597" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnTurt" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="4" textAlignment="CENTER" textFill="#2b1597" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnNuqta" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#nuqtaHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="," textFill="#2b1597" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnQoshuv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#amalHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="+" textFill="#2b1597" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnNol" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#raqamHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="78.0" style="-fx-border-color: black; -fx-background-color: #f0ffff;" text="0" textAlignment="CENTER" textFill="#2b1597" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnTenglik" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tenglikHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="57.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #d8e7f1;" text="=" textFill="#251abf" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#mhotiraHodisa" onMouseEntered="#tugmaKirish" onMouseExited="#tugmaChiqish" prefHeight="25.0" prefWidth="36.0" style="-fx-border-color: black; -fx-background-color: #cfe1ee;" text="MC" textFill="#2b1597" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
